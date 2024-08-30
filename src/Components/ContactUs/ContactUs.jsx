@@ -14,6 +14,9 @@ const ContactUs = () => {
             >
                 <h1 className="pageHeading">CONTACT US</h1>
             </div>
+            <h1 className="sectionHeading">Book Your <span>Dream House</span></h1>
+            <hr className="underline"/>
+            <img src="/images/nirman-home-banner1.jpg" style={{width:"100%",objectFit:"contain",height:"500px"}}/>
         </>
     )
 }

@@ -17,6 +17,14 @@
  align-items: center;
  justify-content: center;
 }
+.banner p{
+    display: none;
+    opacity: 1;
+}
+.banner:hover p {
+    padding: 20px 10px;
+    display: block;
+}
 .banner:hover{
     opacity: 0.9;
 }

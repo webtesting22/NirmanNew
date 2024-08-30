@@ -32,13 +32,53 @@ const AllProjects = () => {
         },
         {
             image: ProjectImage,
-            title: "Nirman LifeStyle",
+            title: "Nirman Twins Bungalows",
             description: "Residential",
         },
         {
             image: ProjectImage,
-            title: "Nirman LifeStyle",
+            title: "Ivory Orchards",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Ivory Springs",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman Flats",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman Complex",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman Tower",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman Tenaments",
             description: "Residential",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman Heights",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman Row House",
+            description: "Residential,Commercial",
+        },
+        {
+            image: ProjectImage,
+            title: "Nirman House",
+            description: "Residential,Commercial",
         },
     ]
     return (
@@ -62,21 +102,7 @@ const AllProjects = () => {
                     <button className="projectButton">Ongoing</button>
                     <button className="projectButton">Completed</button>
                 </div>
-                <Swiper
-                    // slidesPerView={3}
-                    // spaceBetween={30}
-                    width={500}
-                    navigation
-                    pagination={{ clickable: true }}
-                    modules={[Navigation, Pagination]}
-                >
-                    {projectsData.map((item, index) => (
-                        <SwiperSlide key={index}
-                        >
-                            <CardComponent image={item.image} title={item.title} description={item.description} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+               
                 <h1 className="sectionHeading">Commercial <span>Projects</span></h1>
                 <hr className="underline" />
                 <div>

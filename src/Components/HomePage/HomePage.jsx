@@ -25,10 +25,11 @@ const HomePageComponent = ({ image, title, description }) => {
                     borderRadius: "10px",
                     backgroundColor: "#202020",
                     width: "500px",
-                    height: "50px",
+                    // height: "30px",
                     fontSize: "1.2rem",
                     // padding:"10px",
-                    padding:"20px 0"
+                    padding:"10px",
+                    marginBottom:"10px"
                 }}>{description}</p>
 
             </div>
