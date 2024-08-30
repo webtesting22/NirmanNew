@@ -1,0 +1,47 @@
+.projectButton{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.7rem;
+    margin:20px 10px;
+}
+.projectButton:hover{
+    background-color: #0081c7;
+    cursor: pointer;
+}
+.projectImageContainer{
+    object-fit: contain;
+    aspect-ratio: 3/2;
+    width: 100%;
+}
+.projectImageContainer img{
+    width: 100%;
+}
+.cardComponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    max-width: 330px;
+    border:1px solid white;
+    margin: 10px 0;
+}
+.cardComponent button{
+    width: 90%;
+    padding: 10px 10px;
+    margin: 15px;
+    background:transparent;
+    color: white;
+    border:1px solid white; 
+}
+.cardComponent h2{
+    padding: 5px 0;
+}
+.cardComponent p{
+    padding: 5px 0;
+}
+.projectPageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
