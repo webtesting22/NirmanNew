@@ -9,28 +9,11 @@ const HomePageComponent = ({ image, title, description }) => {
             <div
                 style={{
                     backgroundImage: `url(${image})`,
-                    backgroundSize: "cover",
-                    height: "100vh",
-                    top: "0",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "flex-end",
-                    
                 }}
+                className="homePageMain"
             >
-                <h1 style={{
-                    padding:"20px 0"
-                }}>{title}</h1>
-                <p style={{
-                    borderRadius: "10px",
-                    backgroundColor: "#202020",
-                    width: "500px",
-                    // height: "30px",
-                    fontSize: "1.2rem",
-                    // padding:"10px",
-                    padding:"10px",
-                    marginBottom:"10px"
-                }}>{description}</p>
+                <h1 className="homePageHeading">{title}</h1>
+                <p className="homePageParagraph">{description}</p>
 
             </div>
 
@@ -41,15 +24,15 @@ const ProjectComponent = ({ serialNumber, image1, title }) => {
     return (
         <>
             <div className="projectComponentContainer">
-            <div style={{display:"flex",flexDirection:"column"}}>
-                <p>{serialNumber}</p><br/>
-                <h1>{title}</h1>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                    <p>{serialNumber}</p><br />
+                    <h1>{title}</h1>
                 </div>
                 <div className="imageContainer">
                     <img src={image1} alt={title} />
-                   </div>
+                </div>
 
-                
+
             </div>
         </>
     )
@@ -149,7 +132,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div style={{}} className="projectSlides">
+            <div className="projectSlides">
                 <h1 className="sectionHeading">Our <span>Projects</span></h1>
                 <hr className="underline" />
                 <div>
