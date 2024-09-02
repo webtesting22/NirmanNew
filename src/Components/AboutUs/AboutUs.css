@@ -69,9 +69,3 @@
 .team h2{
     padding: 5px 0;
 }
-@media (max-width:576px) {
-    .cardsContainer {
-        /* display: flex;
-        flex-direction: column; */
-    }
-}
