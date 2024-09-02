@@ -117,13 +117,13 @@ const AllProjects = () => {
             <div style={{ backgroundColor: "#151515" }} className="projectPageContainer">
                 <h1 className="sectionHeading">Residential <span>Projects</span></h1>
                 <hr className="underline" />
-                <div>
+                <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <button className={`projectButton ${activeResidentialTab === 'all' ? 'active' : ''}`} onClick={() => setActiveResidentialTab('all')}>All Projects</button>
                     <button className={`projectButton ${activeResidentialTab === 'ongoing' ? 'active' : ''}`} onClick={() => setActiveResidentialTab('ongoing')}>Ongoing</button>
                     <button className={`projectButton ${activeResidentialTab === 'completed' ? 'active' : ''}`} onClick={() => setActiveResidentialTab('completed')}>Completed</button>
                 </div>
                 {activeResidentialTab === 'all' && (
-                    <Swiper slidesPerView={3} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper slidesPerView={3} spaceBetween={30}  centeredSlides={true}  navigation={true} modules={[Navigation]} className="mySwiper">
                         {residentialAllProjects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <CardComponent image={item.image} title={item.title} description={item.descriptionProject} />
@@ -133,7 +133,7 @@ const AllProjects = () => {
                 )}
 
                 {activeResidentialTab === 'ongoing' && (
-                    <Swiper slidesPerView={3} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper slidesPerView={3} spaceBetween={30}  centeredSlides={true}  navigation={true} modules={[Navigation]} className="mySwiper">
                         {residentialOngoingProjects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <CardComponent image={item.image} title={item.title} description={item.descriptionProject} />
@@ -143,7 +143,7 @@ const AllProjects = () => {
                 )}
 
                 {activeResidentialTab === 'completed' && (
-                    <Swiper slidesPerView={3} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper slidesPerView={3} spaceBetween={30}  centeredSlides={true}  navigation={true} modules={[Navigation]} className="mySwiper">
                         {residentialCompletedProjects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <CardComponent image={item.image} title={item.title} description={item.descriptionProject} />
@@ -155,14 +155,14 @@ const AllProjects = () => {
                 {/* Commercial Projects */}
                 <h1 className="sectionHeading">Commercial <span>Projects</span></h1>
                 <hr className="underline" />
-                <div>
+                <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                     <button className="projectButton" onClick={() => setActiveCommercialTab('all')}>All Projects</button>
                     <button className="projectButton" onClick={() => setActiveCommercialTab('ongoing')}>Ongoing</button>
                     <button className="projectButton" onClick={() => setActiveCommercialTab('completed')}>Completed</button>
                 </div>
 
                 {activeCommercialTab === 'all' && (
-                    <Swiper slidesPerView={3} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper slidesPerView={3} spaceBetween={30} centeredSlides={true} navigation={true} modules={[Navigation]} className="mySwiper">
                         {commercialAllProjects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <CardComponent image={item.image} title={item.title} description={item.descriptionProject} />
@@ -172,7 +172,7 @@ const AllProjects = () => {
                 )}
 
                 {activeCommercialTab === 'ongoing' && (
-                    <Swiper slidesPerView={3} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper slidesPerView={3} spaceBetween={30}  centeredSlides={true} navigation={true} modules={[Navigation]} className="mySwiper">
                         {commercialOngoingProjects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <CardComponent image={item.image} title={item.title} description={item.descriptionProject} />
@@ -182,7 +182,7 @@ const AllProjects = () => {
                 )}
 
                 {activeCommercialTab === 'completed' && (
-                    <Swiper slidesPerView={3} spaceBetween={30} navigation={true} modules={[Navigation]} className="mySwiper">
+                    <Swiper slidesPerView={3} spaceBetween={30}  centeredSlides={true} navigation={true} modules={[Navigation]} className="mySwiper">
                         {commercialCompletedProjects.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <CardComponent image={item.image} title={item.title} description={item.descriptionProject} />

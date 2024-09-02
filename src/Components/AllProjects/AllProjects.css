@@ -23,11 +23,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
-    max-width: 330px;
+    /* width: 70%; */
+    /* max-width: 330px; */
     border:1px solid white;
     margin: 10px 0;
 }
+
 .cardComponent button{
     width: 90%;
     padding: 10px 10px;
@@ -42,4 +43,9 @@
 .cardComponent p{
     padding: 5px 0;
 }
-
+/* .swiper-wrapper{
+    margin: 0 100px;
+} */
+ SwiperSlide:hover{
+    transform: scale(1.1);
+ }

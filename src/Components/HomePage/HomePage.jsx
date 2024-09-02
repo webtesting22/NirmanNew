@@ -136,7 +136,8 @@ const HomePage = () => {
                 <h1 className="sectionHeading">Our <span>Projects</span></h1>
                 <hr className="underline" />
                 <div>
-                    <Swiper>
+                    <Swiper
+                    centeredSlides={true}>
                         {projectContent.map((item, index) => (
                             <SwiperSlide key={index}>
                                 <ProjectComponent

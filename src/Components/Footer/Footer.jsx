@@ -15,9 +15,9 @@ const Footer = () => {
                     <Link to="/ContactUs">Contact Us</Link>
                 </div>
                 <div className="socialLinksContainer">
-                    <i class='bx bxl-instagram' style={{ color: "#ffffff" }}  ></i>
-                    <i class='bx bxl-meta' style={{ color: "#ffffff" }}  ></i>
-                    <i class='bx bxl-linkedin-square' style={{ color: "#ffffff" }}  ></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-meta'></i>
+                    <i class='bx bxl-linkedin-square'></i>
 
                 </div>
                 <p>Copyright © All rights reserved by <a href="https://www.Outleadsolutions.com" target="_blank">Outlead Solutions</a></p>
